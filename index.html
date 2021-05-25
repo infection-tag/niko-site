@@ -5,7 +5,7 @@
 <h1>Hello</h1>
 
 <html>
-<body>
+<body>	
 
 <script>
 while(prompt("Enter Password", "Password") != "gay"){
@@ -25,5 +25,48 @@ header{
 	color: white;
 	background-color: red;
 	font-family: monospace;
+}
+	
+button {
+	border-radius: 8px;
+	background-color: blue;
+	border: none;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+button:hover span {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+button:hover span:after {
+	opacity: 0;
+	right: 1;
+	left: 1
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0.5px #666;
+  transform: translateY(4px);
 }
 </style>
