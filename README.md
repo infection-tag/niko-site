@@ -4,4 +4,4 @@ Everything up here is coded by me.
 
 Wanna view it? View it [here!][site]
 
-[site]: https://nikok.ml
+[site]: http://nikok.ml
