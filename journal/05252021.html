@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<div class="sidenav">
+	<a href=index.html><button><span>Home</span></button></a>
+	<a href=about.html><button><span>About</span></button></a>
+	<a href=journal.html><button><span>My blog</span></button></a>
+	<a href=learn.html><button><span>Learn</span></button></a>	
+</div>
+
+<div class="main">
+<style>
+body {
+	background-color: #92e3e6;
+}
+
+p {
+	font-family: monospace;
+}
+
+button {
+	border-radius: 8px;
+	background-color: blue;
+	border: none;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+button:hover span {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+button:hover span:after {
+	opacity: 0;
+	right: 1;
+	left: 1
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+
+<h1>May 25, 2021</h1>
+
+<mark>9:14</mark>
+
+<p>You know, I've been thinking about something. I won't tell you what it is, though.</p>
+
+<form>
+Subscribe to my newsletter!
+<input type="text"></input>
+</form>
+<a href=thereisnoflippingnewsletter.html><button>go!</button></a>
+</html>
